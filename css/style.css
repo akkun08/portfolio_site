@@ -11,16 +11,18 @@ header {
     position: relative;
     width: 100%;
     position: fixed;
-    z-index: 9999;
+    height: 10vh;
+    z-index: 6;
 }
 
 nav {
-    background-color: white;
+    background-color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     height: 10vh;
+    z-index: 6;
     margin-bottom: 50px;
 }
 
@@ -31,8 +33,8 @@ nav {
 
 .nav-links {
     position: absolute;
-    top: 10%;
-    right: 15%;
+    top: 20%;
+    right: 0%;
     display: flex;
     justify-content: space-between;
     font-size: 30px;
@@ -45,4 +47,130 @@ nav {
 
 .nav-links li {
     list-style: none;
+}
+
+.home {
+    position: relative;
+    background-image: url(../img/my-portfoliosite.jpg);
+    height: 100vh;
+    object-fit: cover;
+    background-size: cover;
+}
+
+.image {
+    position: absolute;
+    top: 55%;
+    left: 35%;
+}
+
+.image h2 {
+    font-size: 80px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+    
+    .hamburger {
+        display: block;
+        position: fixed;
+        z-index: 4;
+        right: 13px;
+        top: 12px;
+        width: 42px;
+        height: 42px;
+        cursor: pointer;
+    }
+
+    .hamburger span {
+        display: block;
+        position: absolute;
+        width: 30px;
+        height: 2px;
+        left: 6px;
+        background: #555;
+        -webkit-transition: 0.3s ease-in-out;
+        -moz-transition: 0.3s ease-in-out;
+        transition: 0.3s ease-in-out;  
+    }
+
+    .hamburger span:nth-child(1) {
+        top: 10px;
+    }
+
+    .hamburger span:nth-child(2) {
+        top: 20px;
+    }
+
+    .hamburger span:nth-child(3) {
+        top: 30px;
+    }
+
+    .hamburger.active span:nth-child(1) {
+        top: 16px;
+        left: 6px;
+        background: #fff;
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+    
+    .hamburger.active span:nth-child(2),
+    .hamburger.active span:nth-child(3) {
+        top: 16px;
+        background: #fff;
+        -webkit-transform: rotate(45deg);
+        -moz-transform:rotate(45deg);
+        transform:rotate(45deg);
+    }
+
+    .nav-links {
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        color: #fff;
+        background: rgba(0,0,0,0.9);
+        text-align: center;
+        width: 100%;
+        height: 100vh;
+        justify-content: space-around;
+        flex-direction: column;
+        opacity: 0;
+        transition: opacity .6s ease, visibility .6s ease;
+        
+    }
+
+    .nav-links ul {
+        margin: 0 auto;
+        padding: 0;
+        width: 100%;
+    }
+
+    .nav-links ul li {
+        list-style: none;
+        padding: 0;
+        width: 100%;
+        transition: .4s all;
+    }
+
+    .nav-links ul li :hover {
+        background: #ddd;
+    }
+
+    .nav-links a {
+        display: block;
+        cursor: pointer;
+        color: #fff;
+        padding:  1em 0;
+        text-decoration: none;
+
+    }
+
+    .nav-links.active {
+        opacity: 100;
+    }
+
 }
