@@ -3,6 +3,7 @@
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
     /* box-sizing: border-box; */
 
 }
@@ -13,15 +14,17 @@ header {
     position: fixed;
     height: 10vh;
     z-index: 6;
+
 }
 
 nav {
-    background-color: #fff;
+    background: #333333;
+    color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 10vh;
+    height: 11vh;
     z-index: 6;
     margin-bottom: 50px;
 }
@@ -34,13 +37,14 @@ hr {
 }
 
 .logo {
+    margin-left: 25px;
     font-size: 40px;
     font-weight: bold;
 }
 
 .nav-links {
     position: absolute;
-    top: 20%;
+    top: 24%;
     right: 0%;
     display: flex;
     justify-content: space-between;
@@ -48,7 +52,7 @@ hr {
 }
 
 .nav-links a {
-    color: black;
+    color: #fff;
     margin-right: 30px;
 }
 
@@ -59,7 +63,7 @@ hr {
 .home {
     position: relative;
     background-image: url(../img/my-portfoliosite.jpg);
-    height: 100vh;
+    height: 101vh;
     object-fit: cover;
     background-size: cover;
 }
@@ -70,7 +74,7 @@ hr {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    top: 55%;
+    top: 60%;
     left: 35%;
 }
 
@@ -122,7 +126,7 @@ hr {
 }
 
 .works {
-    height: 100vh;
+    height: auto;
 }
 
 .works h3 {
@@ -144,7 +148,19 @@ hr {
     border: 1px #000 solid;
 }
 
+.imgBx {
+    width: 100%;
+    height: 20rem;
+    overflow: hidden;
+    left: 0;
+    object-fit: cover;
+}
+
+.contentBx {
+    margin-left: 40px;
+}
 .card a {
+    margin-top: 10px;
     font-size: 24px;
     padding: 3px 6px;
     border: 1px #000 solid;
@@ -153,6 +169,47 @@ hr {
 .card a:hover {
     text-decoration: none;
 }
+
+.modal {
+    display: none;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 600;
+}
+
+.modal-bg {
+    background: rgba(0,0,0,0.8);
+    height: 100vh;
+    position: fixed;
+    width: 100%;
+    z-index: 700;
+}
+
+.modal-content {
+    background: #fff;
+    left: 50%;
+    padding: 40px;
+    position: absolute;
+    top: 3%;
+    transform: translate(-50%);
+    width: 60%;
+    height: 100%;
+    z-index: 800;
+    overflow-y: scroll;
+}
+
+.modal-content a {
+    display: inline-block;
+    margin: 15px auto;
+    color: #7f7f7f;
+    text-decoration: none;
+    padding: 10px 15px;
+    border: 1px solid #7f7f7f;
+    z-index: 900;
+}
+
 .contact {
     background-color: #f3f5f8;
     height: 100vh;
@@ -164,7 +221,24 @@ hr {
     text-align: center;
     font-weight: bold;
 }
+.contact p {
+    font-size: 24px;
+    line-height: 1.5;
+}
 
+.contact img {
+    margin-left: 250px;
+    width: 30%;
+    height: 30%;    
+}
+
+footer {
+    background: #333333;
+    color: #ffff;
+    text-align: center;
+    padding-top: 25px;
+    height: 5rem;
+}
 
 
 
@@ -175,10 +249,11 @@ hr {
     
     .hamburger {
         display: block;
+        color: #fff;
         position: fixed;
         z-index: 4;
-        right: 13px;
-        top: 12px;
+        right: 18px;
+        top: 28px;
         width: 42px;
         height: 42px;
         cursor: pointer;
@@ -186,11 +261,12 @@ hr {
 
     .hamburger span {
         display: block;
+        color: #fff;
         position: absolute;
         width: 30px;
         height: 2px;
         left: 6px;
-        background: #555;
+        background: #fff;
         -webkit-transition: 0.3s ease-in-out;
         -moz-transition: 0.3s ease-in-out;
         transition: 0.3s ease-in-out;  
@@ -239,8 +315,13 @@ hr {
         justify-content: space-around;
         flex-direction: column;
         opacity: 0;
-        transition: opacity .6s ease, visibility .6s ease;
-        
+        /* transition: opacity .6s ease, visibility .6s ease; */
+        pointer-events: none;
+        opacity: 0;
+    }
+
+    .nav-links.active {
+        pointer-events: all;
     }
 
     .nav-links ul {
@@ -273,4 +354,19 @@ hr {
         opacity: 100;
     }
 
+    .about {
+        height: 120vh;
+    }
+
+    .image h2 {
+        line-height: 1.5;
+        margin-top: -40px;
+        text-align: right;
+        font-size: 60px;
+        font-weight: bold;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
 }
