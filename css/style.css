@@ -32,23 +32,21 @@ nav {
 hr {
 	width: 60px;
 	border: 1px solid #374CA5;
-    text-align: center;
-    margin: 0 auto 0 auto;
 }
 
-.logo {
-    margin-left: 25px;
-    font-size: 40px;
+.logo h1{
+    margin-left: 35px;
+    font-size: 35px;
     font-weight: bold;
 }
 
 .nav-links {
     position: absolute;
-    top: 24%;
+    top: 29%;
     right: 0%;
     display: flex;
     justify-content: space-between;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .nav-links a {
@@ -72,25 +70,34 @@ hr {
     position: absolute;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: left;
     flex-direction: column;
-    top: 60%;
+    top: 55%;
     left: 35%;
 }
 
-.image h2 {
-    font-size: 80px;
+.web-corder {
+
+    color: #ffffff;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.name {
+    color:#fff;
+    font-size: 70px;
     font-weight: bold;
 }
 
 .about {
+    position: relative;
     height: 100vh;
     background-color: #f3f5f8;
 }
 .about h3 {
     font-size: 50px;
     font-weight: bold;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .about h4 {
@@ -132,13 +139,13 @@ hr {
 .works h3 {
     font-size: 50px;
     font-weight: bold;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .works h4 {
     color:#7f7f7f;
     font-size: 35px;
-    text-align: center;
+    /* text-align: center; */
     font-weight: bold;
 }
 
@@ -218,7 +225,7 @@ hr {
 .contact h3 {
     color:#7f7f7f;
     font-size: 50px;
-    text-align: center;
+    /* text-align: center; */
     font-weight: bold;
 }
 .contact p {
@@ -240,6 +247,16 @@ footer {
     height: 5rem;
 }
 
+.effect-fade {
+    opacity: 0;
+    transform: translate(0, 45px);
+    transition: all 400ms;
+}
+
+.effect-fade .effect-scroll {
+    opacity: 1;
+    transform: translate(0, 0);
+}
 
 
 @media screen and (max-width: 768px) {
@@ -315,12 +332,16 @@ footer {
         justify-content: space-around;
         flex-direction: column;
         opacity: 0;
-        /* transition: opacity .6s ease, visibility .6s ease; */
+        transition: all 1s ease-out;
         pointer-events: none;
         opacity: 0;
+        clip-path: circle(100px at 90% -10%);
+        -webkit-clip-path: circle(100px at 90% -10%);
     }
 
     .nav-links.active {
+        clip-path: circle(1400px at 90% -10%);
+		-webkit-clip-path: circle(1400px at 90% -10%);
         pointer-events: all;
     }
 
@@ -368,5 +389,11 @@ footer {
 
     .card {
         margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width:1024px){
+    .about{
+        height: 130vh;
     }
 }
