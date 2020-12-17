@@ -72,8 +72,8 @@ hr {
     justify-content: center;
     align-items: left;
     flex-direction: column;
-    top: 55%;
-    left: 35%;
+    top: 63%;
+    left: 37%;
 }
 
 .web-corder {
@@ -250,10 +250,10 @@ footer {
 .effect-fade {
     opacity: 0;
     transform: translate(0, 45px);
-    transition: all 400ms;
+    transition: all 500ms;
 }
 
-.effect-fade .effect-scroll {
+.effect-fade.effect-scroll {
     opacity: 1;
     transform: translate(0, 0);
 }
