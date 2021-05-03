@@ -365,7 +365,7 @@ footer {
     .about {
         height: 120vh;
     }
-    .image h2 {
+    .image {
         line-height: 1.5;
         margin-top: -40px;
         text-align: right;
@@ -374,6 +374,14 @@ footer {
     }
     .card {
         margin-bottom: 20px;
+    }
+    .image {
+        position: absolute;
+        top: 53%;
+        left: 17%;
+    }
+    .web-corder h2 {
+        font-size: 30px;
     }
 }
 
