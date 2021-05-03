@@ -33,7 +33,7 @@ hr {
 
 .logo h1 {
     margin-left: 35px;
-    font-size: 35px;
+    font-size: 30px;
     font-weight: bold;
 }
 
@@ -380,6 +380,11 @@ footer {
         position: absolute;
         top: 63%;
         left: 24%;
+    }
+    .logo h1 {
+        margin-left: 35px;
+        font-size: 25px;
+        font-weight: bold;
     }
     .web-corder {
         font-size: 35px;
