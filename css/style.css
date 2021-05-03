@@ -223,7 +223,7 @@ hr {
 
 .contact {
     background-color: #f3f5f8;
-    height: 100vh;
+    height: 80vh;
 }
 
 .contact h3 {
@@ -392,7 +392,8 @@ footer {
         font-size: 40px;
     }
     #contact {
-        height: 90vh;
+        height: 100%;
+        padding-bottom: 80px;
     }
     .twitter img {
         margin: 0 auto;
