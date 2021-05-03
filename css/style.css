@@ -3,6 +3,7 @@ body {
     margin: 0;
     font-family: "Poppins", sans-serif;
     overflow-x: hidden;
+    width: 100%;
     /* box-sizing: border-box; */
 }
 
@@ -226,7 +227,7 @@ hr {
 }
 
 .contact h3 {
-    color: #7f7f7f;
+    color: ;
     font-size: 50px;
     /* text-align: center; */
     font-weight: bold;
@@ -272,7 +273,7 @@ footer {
         position: fixed;
         z-index: 4;
         right: 18px;
-        top: 28px;
+        top: 18px;
         width: 42px;
         height: 42px;
         cursor: pointer;
@@ -315,6 +316,7 @@ footer {
         transform: rotate(45deg);
     }
     .nav-links {
+        width: 30%;
         position: fixed;
         z-index: 1;
         top: 0;
@@ -329,7 +331,6 @@ footer {
         opacity: 0;
         transition: all 1s ease-out;
         pointer-events: none;
-        opacity: 0;
         clip-path: circle(100px at 90% -10%);
         -webkit-clip-path: circle(100px at 90% -10%);
     }
@@ -369,7 +370,7 @@ footer {
         line-height: 1.5;
         margin-top: -40px;
         text-align: right;
-        font-size: 60px;
+        font-size: 40px;
         font-weight: bold;
     }
     .card {
@@ -377,11 +378,25 @@ footer {
     }
     .image {
         position: absolute;
-        top: 53%;
-        left: 17%;
+        top: 63%;
+        left: 24%;
     }
-    .web-corder h2 {
-        font-size: 30px;
+    .web-corder {
+        font-size: 35px;
+    }
+    .about {
+        height: 100%;
+        padding-bottom: 80px;
+    }
+    .name {
+        font-size: 40px;
+    }
+    #contact {
+        height: 90vh;
+    }
+    .twitter img {
+        margin: 0 auto;
+        margin-left: 50px;
     }
 }
 
