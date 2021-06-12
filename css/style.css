@@ -12,6 +12,7 @@ header {
   width: 100%;
   position: fixed;
   z-index: 6;
+  opacity: 0.9;
 }
 
 nav {
@@ -57,10 +58,19 @@ hr {
 
 .home {
   position: relative;
-  background-image: url(../img/my-portfoliosite.jpg);
+  background-image: url(../img/DSC00230.jpeg);
   height: 101vh;
   object-fit: cover;
   background-size: cover;
+  animation: mv_fadeIn 3s;
+}
+@keyframes mv_fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .image {
@@ -180,6 +190,7 @@ hr {
 
 .card a:hover {
   text-decoration: none;
+  opacity: 0.6;
 }
 
 .modal {
@@ -220,6 +231,10 @@ hr {
   padding: 10px 15px;
   border: 1px solid #7f7f7f;
   z-index: 900;
+}
+
+.works-content:hover {
+  opacity: 0.6;
 }
 
 .contact {
