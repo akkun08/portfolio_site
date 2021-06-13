@@ -61,6 +61,7 @@ hr {
   background-image: url(../img/DSC00230.jpeg);
   height: 101vh;
   object-fit: cover;
+  background-position: center;
   background-size: cover;
   animation: mv_fadeIn 3s;
 }
@@ -295,7 +296,7 @@ footer {
     position: fixed;
     z-index: 4;
     right: 18px;
-    top: 18px;
+    top: 12px;
     width: 42px;
     height: 42px;
     cursor: pointer;
