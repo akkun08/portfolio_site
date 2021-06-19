@@ -63,6 +63,9 @@ hr {
   object-fit: cover;
   background-position: center;
   background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   animation: mv_fadeIn 3s;
 }
 @keyframes mv_fadeIn {
@@ -73,21 +76,8 @@ hr {
     opacity: 1;
   }
 }
-
-.image {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: left;
-  flex-direction: column;
-  top: 63%;
-  left: 37%;
-}
-
-.web-corder {
-  color: #ffffff;
-  font-size: 50px;
-  font-weight: bold;
+.home > h2 {
+  margin-top: 140px;
 }
 
 .name {
