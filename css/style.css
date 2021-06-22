@@ -105,13 +105,13 @@ hr {
 }
 
 .about img {
-  width: 50%;
+  width: 60%;
   border-radius: 200px;
   margin-top: 50px;
 }
 
 .profile {
-  margin-top: 50px;
+  margin-top: 60px;
 }
 
 .profile p {
@@ -386,6 +386,14 @@ footer {
     font-size: 40px;
     font-weight: bold;
   }
+  .pf-img > div {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .pf-img img {
+    width: 70%;
+  }
+
   .card {
     margin-bottom: 20px;
   }
@@ -413,9 +421,13 @@ footer {
     height: 100%;
     padding-bottom: 80px;
   }
+  .contact img {
+    margin-left: 0;
+  }
   .twitter img {
+    /* text-align: center; */
     margin: 0 auto;
-    margin-left: 50px;
+    display: block;
   }
 }
 
