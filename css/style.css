@@ -34,9 +34,11 @@ hr {
 .logo {
   margin-left: 35px;
 }
+.logo h1 {
+  font-size: 30px;
+}
 
 .logo a {
-  font-size: 30px;
   font-weight: bold;
   text-decoration: none;
   color: #fff;
@@ -44,7 +46,7 @@ hr {
 
 .nav-links {
   position: absolute;
-  top: 19%;
+  top: 17%;
   right: 0%;
   display: flex;
   justify-content: space-between;
