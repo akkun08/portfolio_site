@@ -23,12 +23,12 @@ $(function () {
 
 // モーダルウインドウ
 $(function () {
-  var winScrollTop;
+  let winScrollTop;
   $(".js-modal-open").each(function () {
     $(this).on("click", function () {
       winScrollTop = $(window).scrollTop();
-      var target = $(this).data("target");
-      var modal = document.getElementById(target);
+      let target = $(this).data("target");
+      let modal = document.getElementById(target);
       $(modal).fadeIn();
       return false;
     });
@@ -42,8 +42,8 @@ $(function () {
 
 // スムーススクロール
 $(function () {
-  $("a[href^='#']:not([herf='#'])").click(function () {
-    var target = $($(this).attr("href")).offset().top;
+  $("a[href^='#']:not([href='#'])").click(function () {
+    let target = $($(this).attr("href")).offset().top;
     target -= 83;
     $("html, body").animate({ scrollTop: target }, 500);
     return false;
@@ -53,9 +53,9 @@ $(function () {
 $(function () {
   $(window).scroll(function () {
     $(".effect-fade").each(function () {
-      var elemPos = $(this).offset().top;
-      var scroll = $(window).scrollTop();
-      var windowHeight = $(window).height();
+      let elemPos = $(this).offset().top;
+      let scroll = $(window).scrollTop();
+      let windowHeight = $(window).height();
       if (scroll > elemPos - windowHeight) {
         $(this).addClass("effect-scroll");
       }

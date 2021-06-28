@@ -31,11 +31,15 @@ hr {
   width: 60px;
   border: 1px solid #374ca5;
 }
-
-.logo h1 {
+.logo {
   margin-left: 35px;
+}
+
+.logo a {
   font-size: 30px;
   font-weight: bold;
+  text-decoration: none;
+  color: #fff;
 }
 
 .nav-links {
@@ -50,6 +54,7 @@ hr {
 .nav-links a {
   color: #fff;
   margin-right: 30px;
+  text-decoration: none;
 }
 
 .nav-links li {
