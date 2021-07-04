@@ -41,10 +41,10 @@ $(function () {
 });
 
 // スムーススクロール
-$(function () {
+$(function () {d
   $("a[href^='#']:not([href='#'])").click(function () {
     let target = $($(this).attr("href")).offset().top;
-    target -= 83;
+    target -= 73;
     $("html, body").animate({ scrollTop: target }, 500);
     return false;
   });
