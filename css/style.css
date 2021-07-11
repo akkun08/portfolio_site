@@ -176,6 +176,11 @@ hr {
   border-bottom: solid 1px;
 }
 
+.img-fluid {
+  display: block;
+  margin-top: -34px;
+}
+
 .contentBx {
   margin-left: 40px;
 }
@@ -241,7 +246,6 @@ hr {
   background-color: #f3f5f8;
   /* height: 80vh; */
   padding-bottom: 250px;
-
 }
 
 .contact h3 {
