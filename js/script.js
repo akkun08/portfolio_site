@@ -41,7 +41,7 @@ $(function () {
 });
 
 // スムーススクロール
-$(function () {d
+$(function () {
   $("a[href^='#']:not([href='#'])").click(function () {
     let target = $($(this).attr("href")).offset().top;
     target -= 73;
@@ -49,6 +49,7 @@ $(function () {d
     return false;
   });
 });
+
 // 要素をふわっと出す
 $(function () {
   $(window).scroll(function () {

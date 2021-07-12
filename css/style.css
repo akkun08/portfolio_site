@@ -176,6 +176,16 @@ hr {
   border-bottom: solid 1px;
 }
 
+.imgBx2 {
+  height: 100%;
+}
+
+.imgBx2 > a > .img-fluid {
+  display: block;
+  margin-top: 1px;
+  border-bottom: 1px #000 solid;
+}
+
 .img-fluid {
   display: block;
   margin-top: -34px;
@@ -185,7 +195,7 @@ hr {
   margin-left: 40px;
 }
 
-.card a {
+.card a:nth-child(2) {
   margin-top: 10px;
   font-size: 24px;
   padding: 3px 6px;
@@ -226,6 +236,7 @@ hr {
   height: 100%;
   z-index: 800;
   overflow-y: scroll;
+  justify-content: center;
 }
 
 .modal-content a {
@@ -244,7 +255,7 @@ hr {
 
 .contact {
   background-color: #f3f5f8;
-  /* height: 80vh; */
+  height: 80vh;
   padding-bottom: 250px;
 }
 
