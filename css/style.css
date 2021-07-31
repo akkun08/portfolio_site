@@ -6,6 +6,25 @@ body {
   width: 100%;
   /* box-sizing: border-box; */
 }
+h2 {
+  font-size: 38px;
+  font-weight: bold;
+}
+h3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 20px;
+  color: #7f7f7f;
+  font-weight: bold;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+}
 
 header {
   position: relative;
@@ -84,12 +103,12 @@ hr {
   }
 }
 .home > h2 {
-  margin-top: 140px;
+  font-size: 80px;
+  margin-top: 170px;
 }
 
 .name {
   color: #fff;
-  font-size: 70px;
   font-weight: bold;
 }
 
@@ -98,18 +117,6 @@ hr {
   /* height: 100vh; */
   background-color: #f3f5f8;
   padding-bottom: 250px;
-}
-
-.about h3 {
-  font-size: 50px;
-  font-weight: bold;
-  /* text-align: center; */
-}
-
-.about h4 {
-  color: #7f7f7f;
-  font-size: 35px;
-  font-weight: bold;
 }
 
 .about img {
@@ -123,7 +130,7 @@ hr {
 }
 
 .profile p {
-  font-size: 24px;
+  font-size: 20px;
   line-height: 1.5;
 }
 
@@ -134,7 +141,6 @@ hr {
 }
 
 .skill p {
-  font-size: 24px;
   line-height: 2;
   margin-right: 25px;
 }
@@ -144,21 +150,8 @@ hr {
   padding-bottom: 250px;
 }
 
-.works h3 {
-  font-size: 50px;
-  font-weight: bold;
-  /* text-align: center; */
-}
-
-.works h4 {
-  color: #7f7f7f;
-  font-size: 35px;
-  /* text-align: center; */
-  font-weight: bold;
-}
-
 .works h5 {
-  font-size: 25px;
+  font-size: 18px;
 }
 
 .card {
@@ -197,7 +190,7 @@ hr {
 
 .card a:nth-child(2) {
   margin-top: 10px;
-  font-size: 24px;
+  font-size: 18px;
   padding: 3px 6px;
   border: 1px #000 solid;
   color: #000;
@@ -206,9 +199,6 @@ hr {
 .card a:hover {
   text-decoration: none;
   opacity: 0.6;
-}
-
-.imgBx2 {
 }
 
 .modal {
@@ -262,14 +252,7 @@ hr {
   padding-bottom: 250px;
 }
 
-.contact h3 {
-  font-size: 50px;
-  /* text-align: center; */
-  font-weight: bold;
-}
-
 .contact p {
-  font-size: 24px;
   line-height: 1.5;
 }
 
