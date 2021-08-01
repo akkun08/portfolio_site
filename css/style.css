@@ -317,7 +317,7 @@ footer {
     position: fixed;
     z-index: 4;
     right: 22px;
-    top: 22px;
+    /* top: 22px; */
     width: 42px;
     height: 42px;
     cursor: pointer;
