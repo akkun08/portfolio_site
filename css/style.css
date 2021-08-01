@@ -110,7 +110,7 @@ hr {
   }
 }
 .home > h2 {
-  font-size: 80px;
+  letter-spacing: 0.1em;
   margin-top: 170px;
 }
 
@@ -471,4 +471,22 @@ footer {
   .about {
     height: 130vh;
   }
+}
+
+/*===============================
+
+　　ローディングアニメーション
+
+===============================*/
+.loading {
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100000;
 }
