@@ -149,11 +149,17 @@ hr {
 }
 
 .about img {
-  width: 40%;
+  text-align: center;
+  width: 60%;
   border-radius: 200px;
   margin-top: 50px;
 }
-
+.pf-img {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+}
 .profile {
   margin-top: 60px;
 }
@@ -233,6 +239,7 @@ hr {
   border: 1px #000 solid;
   color: #000;
   border-radius: 3px;
+  text-decoration: none;
 }
 
 .card a:hover {
@@ -444,7 +451,7 @@ footer {
     font-weight: bold;
   }
   .pf-img > div {
-    margin: 0 auto;
+    margin: -80px auto 50px;
     text-align: center;
   }
   .pf-img img {
@@ -465,15 +472,16 @@ footer {
     font-size: 25px;
     font-weight: bold;
   }
-  .web-corder {
-    font-size: 35px;
-  }
+  
   .about {
     height: 100%;
     padding-bottom: 80px;
   }
   .name {
     font-size: 40px;
+  }
+  .works {
+    margin-top: -60px;
   }
   #contact {
     height: 100%;
