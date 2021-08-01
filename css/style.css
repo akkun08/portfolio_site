@@ -1,10 +1,16 @@
 @charset "utf-8";
+/* * {
+  outline: 1px solid red;
+} */
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
   width: 100%;
   /* box-sizing: border-box; */
+}
+main {
+  overflow-x: hidden;
 }
 h2 {
   font-size: 38px;
@@ -93,7 +99,7 @@ hr {
   justify-content: center;
   align-items: center;
   animation: mv_fadeIn 3s;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 @keyframes mv_fadeIn {
   0% {
@@ -403,6 +409,10 @@ footer {
   }
   .about {
     height: 120vh;
+  }
+  .home > h2 {
+    font-size: 40px;
+    margin-top: 170px;
   }
   .image {
     line-height: 1.5;
