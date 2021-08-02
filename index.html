@@ -20,10 +20,10 @@
     <style type="text/css">
     #test {
       fill:none;
-  stroke:#fff;
-  stroke-width:23;
-  stroke-miterlimit:10;
-  stroke-linecap:round;stroke-linejoin:round;
+      stroke:#fff;
+      stroke-width:23;
+      stroke-miterlimit:10;
+      stroke-linecap:round;stroke-linejoin:round;
       stroke-dasharray:1847;
       stroke-dashoffset:1847;
     }
@@ -424,7 +424,7 @@
                     /></a>
                   </div>
                   <div class="contentBx">
-                    <div class="mt-5 mb-4 content">
+                    <div class="mt-3 mb-4 content">
                       <h5 class="mb-3">SummerSale</h5>
                       <a href="" class="mt-2 js-modal-open" data-target="modal04"
                       >表示</a
@@ -435,18 +435,18 @@
               </div>
               <div class="col-lg-6 mb-5 mt-5">
                 <div class="card card2 effect-fade">
-                  <div class="imgBx2">
+                   <div class="imgBx2">
                     <a href="" class="js-modal-open" data-target="modal05">
                       <img
                       class="img-fluid"
-                      src="img/summer_sale2.png"
+                      src="img/seikabutu2.png"
                       alt=""
                       /></a>
                     </div>
                     <div class="contentBx">
-                      <div class="mt-5 mb-4 content">
+                      <div class="mt-3 mb-4 content">
                         <h5 class="mb-3">SummerSale</h5>
-                        <a href="" class="js-modal-open modal-open" data-target="modal05"
+                        <a href="" class="js-modal-open" data-target="modal05"
                         >表示</a
                         >
                       </div>
@@ -460,60 +460,60 @@
           <div class="modal-bg js-modal-close"></div>
           <div class="modal-content">
             <img
-              class="img-fluid"
+              class="img-fluid2"
               decoding="”async”"
               src="img/airbnb - .jpg"
               alt="airbnbの模写"
             />
-            <a href="#" class="js-mldal-close">閉じる</a>
+            <a href="" class="js-modal-close">閉じる</a>
           </div>
         </div>
         <div id="modal02" class="modal js-modal">
           <div class="modal-bg js-modal-close"></div>
           <div class="modal-content">
             <img
-              class="img-fluid"
+              class="img-fluid2"
               decoding="”async”"
               src="img/airbnb２ - .jpg"
               alt="airbnbの模写"
             />
-            <a href="" class="js-mldal-close">閉じる</a>
+            <a href="" class="js-modal-close">閉じる</a>
           </div>
         </div>
         <div id="modal03" class="modal js-modal">
           <div class="modal-bg js-modal-close"></div>
           <div class="modal-content">
             <img
-              class="img-fluid"
+              class="img-fluid2"
               decoding="”async”"
               src="img/Isara.jpg"
               alt="Isaraの模写"
             />
-            <a href="" class="js-mldal-close">閉じる</a>
+            <a href="" class="js-modal-close">閉じる</a>
           </div>
         </div>
         <div id="modal04" class="modal js-modal">
           <div class="modal-bg js-modal-close"></div>
           <div class="modal-content">
             <img
-              class="img-fluid"
+              class="img-fluid2 banner"
               decoding="”async”"
               src="img/summer_sale1.png"
               alt=""
             />
-            <a href="" class="js-mldal-close">閉じる</a>
+            <a href="" class="js-modal-close">閉じる</a>
           </div>
         </div>
         <div id="modal05" class="modal js-modal">
           <div class="modal-bg js-modal-close"></div>
           <div class="modal-content">
             <img
-              class="img-fluid"
+              class="img-fluid2 banner"
               decoding="”async”"
-              src="img/summer_sale2.png"
+              src="img/seikabutu2.png"
               alt=""
             />
-            <a href="" class="js-mldal-close">閉じる</a>
+            <a class="js-modal-close" href>閉じる</a>
           </div>
         </div>
             <div class="container">
@@ -524,7 +524,7 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-6 works-content1">
               <a href="https://cake-skill-log.herokuapp.com/" target="_blank"
                 ><img
                   class="works-content w-100"
@@ -551,7 +551,7 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-6 works-content1">
               <a href="https://akkunblog-happy-life.com" target="_blank"
                 ><img
                   class="works-content w-100"
@@ -612,6 +612,7 @@
       <p class="copyright_text">
         © Copyright - Akihiro Tsuji, 2020 All Rights Reserved.
       </p>
+      <p id="page_top" class="scroll_top">Page<br>Top</p>
     </footer>
 
     <script
@@ -626,7 +627,7 @@
     new Vivus('test', { //ここにsvgタグにつけたIDを書き込む
       type: 'oneByOne',
       start: 'inViewport',
-      duration: 300,
+      duration: 200,
       forceRender: false,
       animTimingFunction: Vivus.LINEAR,
     });

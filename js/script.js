@@ -63,13 +63,43 @@ $(function () {
     });
   });
 });
+// スクロールでPageTopボタン表示関数
+const pageTopVisi = () => {
+  const pageTopBtn = document.getElementById("page_top");
+  window.addEventListener("scroll", () => {
+    const y = window.pageYOffset;
+    if (y > 100) {
+      setTimeout(function () {
+        pageTopBtn.style.opacity = 1;
+      }, 100);
+    } else {
+      setTimeout(function () {
+        pageTopBtn.style.opacity = 0;
+      }, 100);
+    }
+  });
+}; // ここまでスクロールでPageTopボタン表示関数
+
+$(function () {
+  //htmlロード時の処理
+  // #page-topをクリックした際の設定
+  $("#page_top").click(function () {
+    $("body,html").animate(
+      {
+        scrollTop: 0, //ページトップまでスクロール
+      },
+      500
+    ); //ページトップスクロールの速さ。数字が大きいほど遅くなる
+    return false; //リンク自体の無効化
+  });
+});
 
 /////////////////////////////////
 // 画像、動画などの関連データの全ての読み込みが完了したら実行
 /////////////////////////////////
 
 $(window).on("load", function () {
-  $(".loading").delay(5800).fadeOut("slow"); //ロゴを5.8秒でフェードアウトする記述
+  $(".loading").delay(5200).fadeOut("slow"); //ロゴを5.2秒でフェードアウトする記述
   // smoothScroll();
   pageTopVisi();
 }); // ここまで

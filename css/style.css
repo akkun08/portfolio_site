@@ -54,6 +54,7 @@ p {
     max-width: 1140px;
   }
 }
+
 header {
   position: relative;
   width: 100%;
@@ -165,7 +166,6 @@ hr {
 }
 
 .profile p {
-  font-size: 20px;
   line-height: 1.5;
 }
 
@@ -209,13 +209,14 @@ hr {
 }
 
 .imgBx2 {
-  height: 60%;
+  height: 256px;
+  overflow: hidden;
+  border-bottom: 1px #000 solid;
 }
 
 .imgBx2 > a > .img-fluid {
   display: block;
   margin-top: 1px;
-  border-bottom: 1px #000 solid;
 }
 
 .img-fluid {
@@ -226,6 +227,7 @@ hr {
 
 .img-fluid:hover {
   opacity: 0.6;
+  transform: scale(1.05);
 }
 
 .contentBx {
@@ -275,7 +277,13 @@ hr {
   height: 100%;
   z-index: 800;
   overflow-y: scroll;
-  justify-content: center;
+}
+
+.img-fluid2 {
+  width: 100%;
+}
+.banner {
+  margin-top: 25%;
 }
 
 .modal-content a {
@@ -287,10 +295,17 @@ hr {
   border: 1px solid #7f7f7f;
   z-index: 900;
 }
+.works-content1 {
+  overflow: hidden;
+  /* border: 1px #000 solid; */
+  padding: 0;
+  border-radius: 4px;
+}
 .works-content {
   transition: all 0.7s;
 }
 .works-content:hover {
+  transform: scale(1.05);
   opacity: 0.6;
 }
 
@@ -323,6 +338,31 @@ footer {
   text-align: center;
   padding-top: 25px;
   height: 5rem;
+}
+/* スクロールトップ */
+.scroll_top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 100;
+  background-color: #ddd;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.2;
+}
+.scroll_top:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+.scroll_top {
+  opacity: 0;
+  transition: opacity 350ms ease;
 }
 
 .effect-fade {
