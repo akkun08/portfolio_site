@@ -296,7 +296,7 @@ hr {
   z-index: 900;
 }
 .works-content1 {
-  /* overflow: hidden; */
+  overflow: hidden;
   /* border: 1px #000 solid; */
   padding: 0;
   border-radius: 4px;
