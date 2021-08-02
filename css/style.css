@@ -296,7 +296,7 @@ hr {
   z-index: 900;
 }
 .works-content1 {
-  overflow: hidden;
+  /* overflow: hidden; */
   /* border: 1px #000 solid; */
   padding: 0;
   border-radius: 4px;
@@ -520,6 +520,9 @@ footer {
   .name {
     font-size: 40px;
   }
+  .imgBx2 {
+    height: 100%;
+  }
   .works {
     margin-top: -60px;
   }
@@ -540,6 +543,12 @@ footer {
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .about {
     height: 130vh;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .imgBx2 {
+    height: 216px;
   }
 }
 
