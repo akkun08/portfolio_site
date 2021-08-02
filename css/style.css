@@ -156,10 +156,10 @@ hr {
 }
 .pf-img {
   display: flex;
-    justify-content: center;
-    align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-}
+
 .profile {
   margin-top: 60px;
 }
@@ -472,7 +472,7 @@ footer {
     font-size: 25px;
     font-weight: bold;
   }
-  
+
   .about {
     height: 100%;
     padding-bottom: 80px;
