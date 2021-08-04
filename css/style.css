@@ -177,7 +177,6 @@ hr {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-
 }
 
 .skill p {
@@ -246,9 +245,9 @@ hr {
   position: relative;
   display: inline-block;
   -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
+  transform-style: preserve-3d;
   -webkit-perspective: 300px;
-          perspective: 300px;
+  perspective: 300px;
   width: 150px;
   height: 50px;
   margin: 0 auto;
@@ -267,31 +266,31 @@ hr {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   -webkit-transform-origin: center center -24px;
-          transform-origin: center center -24px;
+  transform-origin: center center -24px;
 }
 
 .content .btn.cubic .hovering {
   background-color: black;
   color: white;
   -webkit-transform: rotateX(90deg);
-          transform: rotateX(90deg);
+  transform: rotateX(90deg);
 }
 
 .content .btn.cubic .default {
   background-color: white;
   color: black;
   -webkit-transform: rotateX(0);
-          transform: rotateX(0);
+  transform: rotateX(0);
 }
 
 .content .btn.cubic:hover .hovering {
   -webkit-transform: rotateX(0);
-          transform: rotateX(0);
+  transform: rotateX(0);
 }
 
 .content .btn.cubic:hover .default {
   -webkit-transform: rotateX(-90deg);
-          transform: rotateX(-90deg);
+  transform: rotateX(-90deg);
 }
 /* .card a:nth-child(2) {
   margin-top: 10px;
@@ -336,7 +335,6 @@ hr {
   height: 100%;
   z-index: 800;
   overflow-y: scroll;
-  
 }
 .banner {
   display: flex;
@@ -350,7 +348,6 @@ hr {
 .icon > .img-fluid2 {
   max-width: 50%;
 }
-
 
 .modal-content a {
   display: inline-block;
@@ -554,8 +551,8 @@ footer {
     margin-top: 170px;
   } */
   .home > img {
-    width: 60%;
-    margin-top: 170px;
+    width: 70%;
+    margin-top: 148px;
   }
   .image {
     line-height: 1.5;
