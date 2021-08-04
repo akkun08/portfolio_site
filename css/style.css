@@ -56,7 +56,7 @@ p {
 }
 
 header {
-  position: relative;
+  /* position: relative; */
   width: 100%;
   position: fixed;
   z-index: 6;
@@ -70,9 +70,10 @@ nav {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: 11vh;
+  height: 10vh;
   z-index: 6;
   margin-bottom: 50px;
+  font-size: 20px;
 }
 
 hr {
@@ -93,12 +94,12 @@ hr {
 }
 
 .nav-links {
-  position: absolute;
+  /* position: absolute;
   top: 19%;
-  right: 0%;
+  right: 0%; */
   display: flex;
   justify-content: space-between;
-  font-size: 25px;
+  align-items: center;
 }
 
 .nav-links a {
@@ -132,8 +133,11 @@ hr {
     opacity: 1;
   }
 }
-.home > h2 {
+/* .home > h2 {
   letter-spacing: 0.1em;
+  margin-top: 170px;
+} */
+.home > img {
   margin-top: 170px;
 }
 
@@ -532,6 +536,7 @@ footer {
     background: #ddd;
   }
   .nav-links a {
+    font-weight: 200;
     display: block;
     cursor: pointer;
     color: #fff;
@@ -544,8 +549,12 @@ footer {
   .about {
     height: 120vh;
   }
-  .home > h2 {
+  /* .home > h2 {
     font-size: 40px;
+    margin-top: 170px;
+  } */
+  .home > img {
+    width: 60%;
     margin-top: 170px;
   }
   .image {
@@ -609,7 +618,7 @@ footer {
 
 @media screen and (max-width: 992px) {
   .works-content2 {
-    padding-left: 0;
+    padding-left: 1%;
   }
 }
 
