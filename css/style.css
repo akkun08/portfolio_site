@@ -293,20 +293,6 @@ hr {
   -webkit-transform: rotateX(-90deg);
   transform: rotateX(-90deg);
 }
-/* .card a:nth-child(2) {
-  margin-top: 10px;
-  font-size: 18px;
-  padding: 3px 6px;
-  border: 1px #000 solid;
-  color: #000;
-  border-radius: 3px;
-  text-decoration: none;
-}
-
-.card a:hover {
-  text-decoration: none;
-  opacity: 0.6;
-} */
 
 .modal {
   display: none;
@@ -337,6 +323,9 @@ hr {
   z-index: 800;
   overflow-y: scroll;
 }
+.modal-content > .content {
+  text-align: center;
+}
 .banner {
   display: flex;
   justify-content: center;
@@ -345,19 +334,16 @@ hr {
 .img-fluid2 {
   display: block;
   width: 100%;
+  margin-bottom: 30px;
 }
-.icon > .img-fluid2 {
+.icon > .content > .img-fluid2 {
   max-width: 50%;
+  margin: 0 auto 30px;
 }
 
 .modal-content a {
-  display: inline-block;
   margin: 15px auto;
-  color: #7f7f7f;
-  text-decoration: none;
-  padding: 10px 15px;
-  border: 1px solid #7f7f7f;
-  z-index: 900;
+  left: 37px;
 }
 .works-content1 {
   overflow: hidden;
