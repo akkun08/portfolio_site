@@ -354,6 +354,13 @@ hr {
 .works-content2 {
   padding-left: 80px;
 }
+.works-content2 > p > span {
+  font-size: 19px;
+  font-weight: 700;
+}
+.works-content2 > p > span:last-child {
+  letter-spacing: 6px;
+}
 .works-content {
   transition: all 0.7s;
 }
