@@ -269,7 +269,7 @@ hr {
   -webkit-transform-origin: center center -24px;
   transform-origin: center center -24px;
 }
-.btn .js-modal-close {
+.btn.js-modal-close {
   position: inherit;
 }
 
