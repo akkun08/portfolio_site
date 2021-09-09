@@ -249,7 +249,7 @@ hr {
   transform-style: preserve-3d;
   -webkit-perspective: 300px;
   perspective: 300px;
-  width: 150px;
+  width: 75px;
   height: 50px;
   margin: 0 auto;
   cursor: pointer;
@@ -259,7 +259,7 @@ hr {
   position: absolute;
   top: 0;
   left: 0;
-  width: 50%;
+  width: 100%;
   height: 100%;
   border: 1px solid black;
   line-height: 44px;
@@ -268,6 +268,9 @@ hr {
   transition: all 0.3s;
   -webkit-transform-origin: center center -24px;
   transform-origin: center center -24px;
+}
+.btn .js-modal-close {
+  position: inherit;
 }
 
 .content .btn.cubic .hovering {
