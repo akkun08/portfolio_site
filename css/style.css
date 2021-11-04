@@ -170,8 +170,9 @@ hr {
   margin-top: 60px;
 }
 
-.profile p {
-  line-height: 1.5;
+.profile > p {
+  line-height: 1.9;
+  letter-spacing: 2px;
 }
 
 .skill-type {
